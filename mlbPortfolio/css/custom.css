@@ -1,5 +1,6 @@
 body {
   color: #000000!important;
+  font-family: 'Montserrat';
 }
 
 .primary-color{
@@ -27,10 +28,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Radley", serif;
 }
 
-/* .page-section-heading{
-  font-size: 4rem!important;
-} */
-
+@media (min-width: 992px) {
+  .page-section .page-section-heading {
+      font-size: 2.5em;
+      line-height: 2rem;
+  }
+}
 /* @media (min-width: 992px) {
   .masthead .masthead-heading {
       font-size: 7rem!important;
@@ -49,11 +52,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 .bg-primary{
-  background-color: #f4f1e8!important;
+  background-color: #9b4819!important;
 }
 
 .bg-secondary{
-  background-color: #9b4819!important;
+  background-color: #f4f1e8!important;
 }
 
 img {
@@ -63,14 +66,41 @@ img {
   width: auto;
 }
 
+.work-experience-header{
+  font-family: 'Montserrat';
+  font-weight: 100;
+}
+
 .work-experience-div-content{
   display: flex;
   justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .work-experience-div-content {
+    flex-direction: column;
+  }
+}
+
+
+
 .work-experience-content{
   display: flex;
   justify-content: space-between;
+}
+
+.work-experience-content span{
+  font-family: 'Montserrat';
+  font-weight: 100;
+}
+
+.company-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.company-position{
+  color: #bab6aa;
 }
 
 .core-development-focus-row{
