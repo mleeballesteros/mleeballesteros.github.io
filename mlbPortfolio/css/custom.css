@@ -25,19 +25,13 @@ body {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Radley", serif;
-  font-weight: 100;
 }
 
-.page-section-heading{
+/* .page-section-heading{
   font-size: 4rem!important;
-}
+} */
 
-.page-section-subheading{
-  font-size: 1.5rem!important;
-  color: #000000;
-}
-
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .masthead .masthead-heading {
       font-size: 7rem!important;
       line-height: 3.5rem;
@@ -48,6 +42,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   .masthead .masthead-subheading {
       font-size: 2rem;
   }
+} */
+
+.masthead-position{
+  letter-spacing: 10px;
 }
 
 .bg-primary{
@@ -65,6 +63,16 @@ img {
   width: auto;
 }
 
+.work-experience-div-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-experience-content{
+  display: flex;
+  justify-content: space-between;
+}
+
 .core-development-focus-row{
   display: flex;
   justify-content: space-around;
@@ -72,30 +80,39 @@ img {
 
 .core-development-focus-img{
   max-height: 96px;
-}
-
-.core-development-focus-img-div{
-  height: 100px;
-  display: flex;
-  align-items: center;
+  margin: 0px;
 }
 
 .core-development-focus-div{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.core-development-focus-div-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-div{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .card{
+  
+  border-color: #e7e4dacc;
+  background-color: #e7e4da;
+  color: white;
+}
+
+.card:hover{
   border-color: #f4f1e8cc;
   background-color: #f4f1e8;
-  color: white;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -119,10 +136,21 @@ img {
   align-items: flex-start;
 }
 
-h1.page-section-heading.mb-4{
+.free-to-connect{
   text-align: left!important;
 }
 
 .footer{
   background-color: #9b4819;
+}
+
+.footer-contact{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.build-container{
+  display: flex;
+  flex-direction: column;
 }
